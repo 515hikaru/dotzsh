@@ -18,6 +18,9 @@ compinit
 # prompt
 PS1='%F{196}%n%f:%F{159}%c%f%# '
 
+# editor
+export EDITOR=vim
+
 # aliases
 alias pbcopy='xclip -selection c'
 alias pbpaste='xclip -selection c -o'
