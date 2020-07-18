@@ -14,6 +14,8 @@ fpath+="$HOME/zsh/share/completions"
 
 autoload -Uz compinit
 compinit
+autoload -U bashcompinit
+bashcompinit
 # End of lines added by compinstall
 # prompt
 PS1='%F{196}%n%f:%F{159}%c%f%# '
@@ -50,3 +52,10 @@ ghq() {
 
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
+
+export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
+
+# Created by `userpath` on 2020-07-15 12:51:34
+export PATH="$PATH:/home/hikaru/.local/bin"
+
+eval "$(register-python-argcomplete pipx)"
